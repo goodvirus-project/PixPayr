@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PixPayr — Fast & Simple Payments</title>
+  <meta name="description" content="PixPayr — A clean landing page placeholder while we build the experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="container header">
+    <div class="logo">PixPayr</div>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">☾</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Fast. Simple. Modern payments.</h1>
+      <p class="subtitle">We are building a lightweight way to pay and get paid. Clean design. Developer friendly. Privacy first.</p>
+      <div class="cta">
+        <a class="btn primary" href="#waitlist">Join waitlist</a>
+        <a class="btn" href="#features">Learn more</a>
+      </div>
+    </section>
+
+    <section id="features" class="features container">
+      <div class="feature">
+        <div class="icon">⚡</div>
+        <h3>Blazing fast</h3>
+        <p>Optimized flows and low-latency APIs. Payments in a snap.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🔒</div>
+        <h3>Secure by design</h3>
+        <p>Strong encryption, secure headers, and least-privilege architecture.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🧩</div>
+        <h3>Developer first</h3>
+        <p>Clean SDKs, clear docs, and simple integration patterns.</p>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About PixPayr</h2>
+      <p>We are experimenting with a modern approach to online payments. This is a placeholder landing while we build. Follow updates here.</p>
+    </section>
+
+    <section id="waitlist" class="waitlist container">
+      <h2>Join the waitlist</h2>
+      <form id="waitlistForm" action="https://example.com" method="get" onsubmit="return false;">
+        <input type="email" id="email" placeholder="you@example.com" required />
+        <button class="btn primary" type="submit">Notify me</button>
+      </form>
+      <p class="note" id="formNote">We’ll never spam. Just launch updates.</p>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <span>© <span id="year"></span> PixPayr</span>
+    <a href="https://github.com/goodvirus/PixPayr" target="_blank" rel="noopener">GitHub</a>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
